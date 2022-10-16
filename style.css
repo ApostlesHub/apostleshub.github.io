@@ -1,0 +1,82 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #FFF;
+}
+input[type=submit] {
+  width:335px; height:35px; background-color: #01639C; border: solid 1px #01639C; font-family: Verdana; 
+  font-size: 13px; font-weight: light; color: #ffffff; 
+  -moz-border-radius: 2px 7px 1px 5px; -webkit-border-radius: 2px 7px 1px 5px; -khtml-border-radius: 2px 7px 1px 5px; border-radius: 2px 7px 1px 5px;
+  -moz-box-shadow: 5px 5px 5px #000000; -webkit-box-shadow: 5px 5px 5px #000000; box-shadow: 5px 5px 5px #000000;
+}
+input[type=password] {
+  height:20px; width:320px; font-family: Verdana; font-size: 13px; font-weight: light; color:#000000; 
+  background-color: #ffffff; border: solid 1px #424242; padding: 7px; 
+  -moz-border-radius: 2px; -webkit-border-radius: 2px; -khtml-border-radius: 2px; border-radius: 2px;
+  -moz-box-shadow: 2px 2px 2px #000000; -webkit-box-shadow: 2px 2px 2px #000000; box-shadow: 2px 2px 2px #000000;
+  }
+input[type=email] {
+  height:20px; width:320px; font-family: Verdana; font-size: 13px; font-weight: light; color:#000000; 
+  background-color: #ffffff; border: solid 1px #424242; padding: 7px; 
+  -moz-border-radius: 2px; -webkit-border-radius: 2px; -khtml-border-radius: 2px; border-radius: 2px;
+  -moz-box-shadow: 2px 2px 2px #000000; -webkit-box-shadow: 2px 2px 2px #000000; box-shadow: 2px 2px 2px #000000;
+  }
+  p.test1 {
+  writing-mode: horizontal-tb; 
+}
+
+p.test2 {
+  writing-mode: vertical-rl; 
+}
+
+span.test2 {
+  writing-mode: vertical-rl; 
+}
+
+.loader {
+  border: 5px solid #FFF;
+  border-radius: 50%;
+  border-top: 5px solid red;
+  border-right: 5px solid #FFF;
+  border-bottom: 5px solid red;
+  width: 7px;
+  height: 7px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+<script>
+$(document).ready(function(){
+    $('#show').click(function() {
+      $('.menu').toggle("slide");
+    });
+});
+</script>
+<script type="text/javascript"> 
+function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+ 
+function display_ct() {
+var x = new Date()
+document.getElementById('ct').innerHTML = x;
+display_c();
