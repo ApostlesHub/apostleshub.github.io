@@ -1,0 +1,30 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #FFF;
+}
+input[type=submit] {
+  width:100px; height:35px; background-color: #01639C; border: solid 1px #01639C; font-family: Verdana; 
+  font-size: 13px; font-weight: light; color: #ffffff; 
+  -moz-border-radius: 2px 7px 1px 5px; -webkit-border-radius: 2px 7px 1px 5px; -khtml-border-radius: 2px 7px 1px 5px; border-radius: 2px 7px 1px 5px;
+  -moz-box-shadow: 5px 5px 5px #000000; -webkit-box-shadow: 5px 5px 5px #000000; box-shadow: 5px 5px 5px #000000;
+}
+input[type=password] {
+  height:25px; width:253px; font-family: Verdana; font-size: 13px; font-weight: light; color:#000000; 
+  background-color: #ffffff; border: solid 1px #BDBDBD; padding: 5px; 
+  -moz-border-radius: 2px; -webkit-border-radius: 2px; -khtml-border-radius: 2px; border-radius: 2px;
+  -moz-box-shadow: 2px 2px 2px #848484; -webkit-box-shadow: 2px 2px 2px #848484; box-shadow: 2px 2px 2px #848484;
+  }
+input[type=email] {
+  height:25px; width:253px; font-family: Verdana; font-size: 13px; font-weight: light; color:#000000; 
+  background-color: #ffffff; border: solid 1px #BDBDBD; padding: 5px; 
+  -moz-border-radius: 2px; -webkit-border-radius: 2px; -khtml-border-radius: 2px; border-radius: 2px;
+  -moz-box-shadow: 2px 2px 2px #848484; -webkit-box-shadow: 2px 2px 2px #848484; box-shadow: 2px 2px 2px #848484;
